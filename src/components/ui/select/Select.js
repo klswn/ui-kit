@@ -140,6 +140,17 @@ class Select extends Component {
                 boxSizing: 'border-box',
                 transition: 'all .1s ease-in',
 			},
+			arrow: {
+				position: 'absolute',
+				top: '43%',
+				right: '5%',
+				cursor: 'pointer',
+				width: 0,
+				height: 0,
+				borderLeft: '7px solid transparent',
+				borderRight: '7px solid transparent',
+				borderTop: '10px solid rgba(95,95,95,0.4)',
+			},
 		};
 
 		return (
@@ -150,6 +161,8 @@ class Select extends Component {
 				<div style={ style.select }>
 					{ this.renderSelected() }
 				</div>
+
+				<div style={ style.arrow }></div>
 
 				{ this.renderDropdown() }
 			</div>
