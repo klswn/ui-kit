@@ -38,9 +38,9 @@ export default class Input extends Component {
 				backgroundColor: this.state.focus ? '#fff' : '#efefef',
 				borderRadius: '8px',
 				WebkitBoxSizing: 'border-box',
-                MozBoxSizing: 'border-box',
-                boxSizing: 'border-box',
-                transition: 'all .1s ease-in',
+				MozBoxSizing: 'border-box',
+				boxSizing: 'border-box',
+				transition: 'all .1s ease-in',
 			},
 			label: {
 				fontSize:'0.8rem',
