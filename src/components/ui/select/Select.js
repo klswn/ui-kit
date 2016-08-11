@@ -97,26 +97,24 @@ class Select extends Component {
 			},
 		};
 
-		if (true) {
-			const options = this.props.options.map((option, index) => {
-				const s = (this.props.selected === option.value) ? style.selectedOption : style.option;
-
-				return (
-					<div
-						key={ index }
-						style={ s }
-						onClick={ this.onClick.bind(this, option.value) }>
-						{ option.label }
-					</div>
-				);
-			});
+		const options = this.props.options.map((option, index) => {
+			const s = (this.props.selected === option.value) ? style.selectedOption : style.option;
 
 			return (
-				<div style={ style.dropdown }>
-					{ options }
+				<div
+					key={ index }
+					style={ s }
+					onClick={ this.onClick.bind(this, option.value) }>
+					{ option.label }
 				</div>
 			);
-		}
+		});
+
+		return (
+			<div style={ style.dropdown }>
+				{ options }
+			</div>
+		);
 	};
 
 	render() {
