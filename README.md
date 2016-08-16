@@ -15,6 +15,7 @@ A clean UI-Kit for React projects. (Still a WIP)
 | value       | Number or String |
 | label       | String           |
 | placeholder | String           |
+| style       | Object           |
 | onChange    | Function         |
 
 ### Select ###
@@ -27,4 +28,5 @@ A clean UI-Kit for React projects. (Still a WIP)
 | options     | Object           |
 | selected    | Number or String |
 | label       | String           |
+| style       | Object           |
 | onChange    | Function         |
