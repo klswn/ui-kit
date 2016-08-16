@@ -1,18 +1,30 @@
-# UI-KIT
+# UI-KIT #
 
-A simple UI-Kit for React projects.
+A clean UI-Kit for React projects. (Still a WIP)
 
-# Components
+## Components ##
 
-## Input
+### Input ###
 
-### Props
-- value
-- onChange
+![](http://i.giphy.com/wsUyl2lqp5fP2.gif)
 
-## Select
+#### Props ####
 
-### Props
-- selected
-- options
-- onChange
+| Name        | Type             |
+| ------------|------------------|
+| value       | Number or String |
+| label       | String           |
+| placeholder | String           |
+| onChange    | Function         |
+
+### Select ###
+![](http://i.giphy.com/Nf4peL0XLrHpe.gif)
+
+#### Props ####
+
+| Name        | Type             |
+| ------------|------------------|
+| options     | Object           |
+| selected    | Number or String |
+| label       | String           |
+| onChange    | Function         |
