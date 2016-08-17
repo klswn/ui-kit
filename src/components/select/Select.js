@@ -171,19 +171,19 @@ class Select extends Component {
 Select.defaultProps = {
 	options: [
 		{
-			label: 'One',
+			label: 'Option one',
 			value: 1,
 		},
 		{
-			label: 'Two',
+			label: 'Option two',
 			value: 2,
 		},
 		{
-			label: 'Three',
+			label: 'Option three',
 			value: 3,
 		},
 	],
-	selected: 2,
+	selected: 1,
 	label: 'Select',
 	onChange: () => {},
 };

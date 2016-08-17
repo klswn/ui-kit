@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
-import Input from '../../ui/input/Input.js';
-import Button from '../../ui/buttons/Button.js';
-import Select from '../../ui/select/Select.js';
+import Input from '../input/Input.js';
+import Button from '../buttons/Button.js';
+import Select from '../select/Select.js';
+import Card from '../card/Card.js';
 
 export default class Login extends Component {
 	constructor() {

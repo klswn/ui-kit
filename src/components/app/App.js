@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
-import Login from '../examples/login/Login.js';
+import TopNav from '../nav/TopNav.js';
+import SideNav from '../nav/SideNav.js';
 
 export default class App extends Component {
-	render() {
+  render() {
+    const style = {
+      content: {
+        paddingTop: 40,
+      },
+    };
+
 		return (
-			<Login />
+      <div>
+        <SideNav />
+
+        <div style={ style.content }>
+          { this.props.children }
+        </div>
+      </div>
 		);
 	}
 }

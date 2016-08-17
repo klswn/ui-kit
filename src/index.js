@@ -1,5 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app/App';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Routes
+import App from './components/app/App';
+import CardExample from './components/examples/CardExample';
+import Login from './components/examples/Login';
+
+const routes = (
+  <Route path="/" component={ App }>
+    <Route path="/login" component={ Login } />
+    <Route path="/card" component={ CardExample } />
+    <IndexRoute component={ Login } />
+  </Route>
+);
+
+ReactDOM.render(
+  <Router
+    routes={ routes }
+    history={ browserHistory } />,
+  document.getElementById('root')
+);
